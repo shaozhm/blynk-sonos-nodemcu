@@ -44,16 +44,25 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
+/** 
+  | machine            | token                              | hardware     | js program    |
+  | :----------------  | :--------------------------------- | :----------- | :----------   |
+  | NF1                | TWeLjKM2HPMbpThb9wc9Py0OwGHWKfII   | NodeMCU      |               |
+  | NT1                | l-ENcwSVVQGsmfZyjD-XiwXS7yoUIKEg   | NodeMCU      |               |
+  | NSUB               | QaW4U6_jzOKbthNeebh1mG2vGw_GStw_   | NodeMCU      |               |
+  | NS1L               | jUZMCbN6q5j1VonTxZDXa4x9gmAnGpsr   | NodeMCU      |               |
+  | NS1R               | vyt4OSy-c0AbNFKkzdSOl9W0_TTTPzzx   | NodeMCU      |               |
+*/
+
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 char auth[] = "QaW4U6_jzOKbthNeebh1mG2vGw_GStw_";
+char WiFi_hostname[] = "NSUB";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
 char ssid[] = "zmlinksys";
 char pass[] = "gti21#Oracle";
-
-char WiFi_hostname[] = "NSUB";
 
 const int builtinLedPin = 16; //[output] D0 pin on NodeMCU - the builtin LED
 const int musicPin = 5; //[output] D1 pin on NodeMCU - the music relay
