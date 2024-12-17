@@ -50,7 +50,7 @@ char auth[] = "QaW4U6_jzOKbthNeebh1mG2vGw_GStw_";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Zhimin_NG";
+char ssid[] = "zmlinksys";
 char pass[] = "gti21#Oracle";
 
 char WiFi_hostname[] = "NSUB";
@@ -136,7 +136,7 @@ void setup()
   
   //Blynk.begin(auth, ssid, pass);
   // You can also specify server:
-  Blynk.begin(auth, ssid, pass, "sonospi.local", 8442);
+  Blynk.begin(auth, ssid, pass, "sonos.local", 8442);
   //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
 
   WiFi.hostname(WiFi_hostname);
